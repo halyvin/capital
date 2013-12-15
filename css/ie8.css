@@ -1,0 +1,10 @@
+.module:before,
+.module:after {
+	display: none;
+	}
+.coop_steps__item:after {
+	display: none;
+	}	
+.widget_link:after {
+	display: none;
+	}
