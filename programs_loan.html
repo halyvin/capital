@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/slider.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/ui.css" media="all, screen, projection">
+
+	<script type="text/javascript" src="js/libs/html5shiv.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.js"></script>
+	<script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/libs/bootstrap-slider.js"></script>
+	<script type="text/javascript" src="js/libs/bootstrap-select.min.js"></script>
+	<script type="text/javascript" src="js/libs/ui_inputs.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+
+</head>
+<body>
+
+	<div class="sitewrap">
+
+		<header class="header wrap">
+			<a href="/" class="header__site-logo-link">
+				<img src="img/site_logo.png" alt="Капитал Сибири (кредитный потребительский кооператив)" class="header__site-logo-img">
+			</a>
+
+			<div class="header__phone">
+				<div class="header__callme">Заказать обратный звонок</div>
+				<a href="tel:8800123-44-55" class="header__phone-link"><span class="header__phone-link_city-code">+7(800)</span>123-44-55</a>
+			</div>
+			
+			<div class="header__site-helpers">
+				<ul class="header__site-helpers_navigation">
+					<li class="header__site-helpers_navigation_item">
+						<a href="#" class="header__site-helpers_navigation_link">Вопрос-ответ</a>
+					</li>
+					<li class="header__site-helpers_navigation_item">
+						<a href="#" class="header__site-helpers_navigation_link">Отзывы</a>
+					</li>
+					<li class="header__site-helpers_navigation_item">
+						<a href="#" class="header__site-helpers_navigation_link">Новости и статьи</a>
+					</li>
+				</ul>
+				<div class="header__site-helpers_working-time">
+					Режим работы:<br>
+					с 9 00 до 21 00
+				</div>
+				<div class="header__site-helpers_searchbar">
+					<input type="text" class="header__site-helpers_search" placeholder="Поиск по сайту">
+					<input type="submit" value="" class="header__site-helpers_submit">
+				</div>
+			</div>
+
+			<ul class="header__navigation">
+				<li class="header__navigation_item">
+					<a href="/" class="header__navigation_link go_home">
+						<img src="img/home_ico.png" alt="Пора домой! :)" class="header__navigation_link-img">
+					</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link">Займы</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link current">Сберегательные программы</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link">Проверка кредитной истории</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link">О кооперативе</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link">Контакты</a>
+				</li>
+			</ul>
+		</header>
+
+		<div class="content content_colored">
+			<div class="wrap">
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs__item">
+						<a href="" class="breadcrumbs__link">Главная</a>
+					</li>
+					<li class="breadcrumbs__item">
+						Текущая
+					</li>
+				</ul>
+				<aside class="content_info_aside">
+					<div class="online_consulting content_info_aside__widget">
+						<h2 class="title online_consulting__title">online-консультант</h2>
+						<div class="online_consulting__consultant">
+							<img src="img/consultant.png" alt="Оленька" class="online_consulting__consultant_avatar">
+							<div class="online_consulting__consultant_desc">
+								<div class="online_consulting__consultant_name">Иванова Ольга</div>
+								<a href="tel:81234567891" class="online_consulting__consultant_phone">8(123) 456-78-91</a>
+								<a href="mailto:dober-alit@rambler.ru" class="online_consulting__consultant_email">dober-alit@rambler.ru</a>
+							</div>
+						</div>
+						<input type="submit" class="button button_type2 online_consulting__consultant_submit" value="Задать вопрос">
+					</div>
+					<div class="program_steps content_info_aside__widget">
+						<h2 class="title program_steps__title">Займы</h2>
+						<h3 class="title program_steps_count">Шаг 1</h3>
+
+						<label for="program" class="program_steps__label">Программа</label>
+						<select name="program" id="loan_program" class="select" data-width="100%">
+							<option value="Микрозайм" id="microloan">Микрозайм</option>
+							<option value="Займ под залог" id="loan_bail">Займ под залог</option>
+							<option value="Займ под поручительство" id="loan_surety">Займ под поручительство</option>
+						</select>
+						
+						<div class="setting_wrap">
+							<label for="loan_amount" class="program_steps__label">Сумма займа</label>
+							<input type="number" name="term_loan" min="1000" max="10000" value="1000" step="1000" class="quantity_select module__input module__small-input"  data-measure="руб." id="laon_money">
+						</div>
+
+						<div class="setting_wrap">
+							<label for="term_loan" class="program_steps__label">Срок займа</label>
+							<input type="number" name="term_loan" min="1" max="14" step="1" value="2" class="quantity_select module__input module__small-input" data-measure="дней" id="laon_days">	
+						</div>
+
+						<div class="program_steps__result">
+							Сумма к оплате 
+							<span class="program_steps__result_whole-number">20000</span><span class="program_steps__result_decimal-number">00</span>
+						</div>
+
+						<input type="submit" class="button button_type1 program_steps__submit" value="получить деньги">
+					</div>
+					<div class="program_steps content_info_aside__widget">
+						<h3 class="title program_steps_count">Шаг 2</h3>
+						<lable class="program_steps__label important_field">Как вас зовут</lable>
+						<input type="text" class="program_steps__input input_whit_error">
+						<lable class="program_steps__label important_field">Телефон</lable>
+						<input type="tel" class="program_steps__input">
+						<lable class="program_steps__label important_field">Удобное время для звонка</lable>
+						<input type="text" class="program_steps__input">
+						<lable class="program_steps__label important_field">Вы можете предварительно задать вопрос</lable>
+						<textarea name="question" class="program_steps__textarea"></textarea>
+						<input type="submit" class="button button_type2 program_steps__submit" value="Отправить заявку">
+					</div>
+				</aside>
+				<section class="usercontent section">
+					<h1>Заголовочег</h1>
+					<img src="img/content_img1.png" alt="img" style="float:left;">
+					<p>
+						Пример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolorПример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolorПример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolor
+					</p>
+					<p>
+						Пример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolorПример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolorПример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolor
+					</p>
+					<img src="img/content_img2.png" alt="img" style="float:right;">
+					<p>
+						Пример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolorПример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolorПример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolor
+					</p>
+					<p>
+						Пример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolorПример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolorПример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolor
+					</p>
+				</section>
+			</div>
+		</div>	
+
+	</div>
+	<footer class="footer wrap">
+		&copy; 2008-2012. Все права защищены. Создание сайтов
+	</footer>
+
+	
+	
+
+
+
+</body>
+</html>

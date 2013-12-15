@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/slider.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/ui.css" media="all, screen, projection">
+
+	<script type="text/javascript" src="js/libs/html5shiv.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.js"></script>
+	<script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/libs/bootstrap-slider.js"></script>
+	<script type="text/javascript" src="js/libs/bootstrap-select.min.js"></script>
+	<script type="text/javascript" src="js/libs/ui_inputs.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+
+</head>
+<body>
+
+	<div class="sitewrap">
+
+		<header class="header wrap">
+			<a href="/" class="header__site-logo-link">
+				<img src="img/site_logo.png" alt="Капитал Сибири (кредитный потребительский кооператив)" class="header__site-logo-img">
+			</a>
+
+			<div class="header__phone">
+				<div class="header__callme">Заказать обратный звонок</div>
+				<a href="tel:8800123-44-55" class="header__phone-link"><span class="header__phone-link_city-code">+7(800)</span>123-44-55</a>
+			</div>
+			
+			<div class="header__site-helpers">
+				<ul class="header__site-helpers_navigation">
+					<li class="header__site-helpers_navigation_item">
+						<a href="#" class="header__site-helpers_navigation_link">Вопрос-ответ</a>
+					</li>
+					<li class="header__site-helpers_navigation_item">
+						<a href="#" class="header__site-helpers_navigation_link">Отзывы</a>
+					</li>
+					<li class="header__site-helpers_navigation_item">
+						<a href="#" class="header__site-helpers_navigation_link">Новости и статьи</a>
+					</li>
+				</ul>
+				<div class="header__site-helpers_working-time">
+					Режим работы:<br>
+					с 9 00 до 21 00
+				</div>
+				<div class="header__site-helpers_searchbar">
+					<input type="text" class="header__site-helpers_search" placeholder="Поиск по сайту">
+					<input type="submit" value="" class="header__site-helpers_submit">
+				</div>
+			</div>
+
+			<ul class="header__navigation">
+				<li class="header__navigation_item">
+					<a href="/" class="header__navigation_link go_home">
+						<img src="img/home_ico.png" alt="Пора домой! :)" class="header__navigation_link-img">
+					</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link">Займы</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link current">Сберегательные программы</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link">Проверка кредитной истории</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link">О кооперативе</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link">Контакты</a>
+				</li>
+			</ul>
+		</header>
+
+		<div class="content content_colored">
+			<div class="wrap">
+				
+				<form class="control savings_control">
+					<div class="contol__wrapper">
+						<div class="module savings">
+							<div class="module__form">
+								<h1 class="module__title">Заявка на вклад</h1>
+
+								<div class="setting_wrap">
+									<input type="number" name="savings_loan" min="1000" max="10000" step="1000" value="1000" class="quantity_select module__input module__fullsize-input" data-measure="руб." id="savings_money">
+								</div>
+
+								<div class="setting_wrap">
+									<span class="slider_info_helper slider_info_helper-term">
+										Срок вклада: 
+										<span class="slider_info_helper_value">3 месяца</span>
+									</span>
+									<span class="slider_info_helper slider_info_helper-percent">
+										Годовой процент: 
+										<span class="slider_info_helper_value">16%</span>
+									</span>
+									<input type="range" class="module__slider slider" value="" data-slider-min="0" data-slider-max="30" data-values="hide" data-slider-step="1" data-slider-value="1" data-slider-selection="after" data-slider-tooltip="hide">
+								</div>	
+
+								<div class="module__result">
+									Сумма к получению 
+									<span class="module__result_whole-number">2000</span>
+									<span class="module__result_decimal-number">00</span>
+								</div>
+
+								<input type="submit" value="Стать пайщиком" class="button button_type2 savings_button">
+							</div>	
+						</div>
+					</div>
+					<div class="contol__form_wrapper">
+						<div class="contol__form__field">
+							<label for="id1" class="contol__form__field_label important_field">Как вас зовут</label>
+							<input type="text" id="id1" class="contol__form__field_input">
+						</div>
+						<div class="contol__form__field">
+							<label for="id2" class="contol__form__field_label important_field">Телефон</label>
+							<input type="text" id="id2" class="contol__form__field_input">
+						</div>
+						<div class="contol__form__field">
+							<label for="id2" class="contol__form__field_label">Удобное&nbsp;время<br>для звонка</label>
+							<input type="text" id="id2" class="contol__form__field_input">
+						</div>
+						<div class="contol__form__field">
+							<label for="id3" class="contol__form__field_label">Вы можете<br>предварительно<br>задать вопрос</label>
+							<textarea name="" id="" id="id3" class="contol__form__field_textarea"></textarea>
+						</div>
+					</div>
+				</form>
+
+				<div class="control_feedback_msg">
+					Спасибо за вашу заявку.<br>
+					Мы свяжемся с вами в ближайшее время
+				</div>
+
+				<form class="control loan_control">
+					<div class="contol__wrapper">
+						<div class="module loan">
+							<div class="module__form">
+								<h1 class="module__title">Заявка на займ</h1>
+
+								<div class="setting_wrap">
+									<label for="loan_amount" class="module__label">Сумма займа</label>
+									<div class="setting_item">
+										<input type="number" name="term_loan" min="1000" max="10000" value="1000" step="1000" class="quantity_select module__input module__small-input"  data-measure="руб." id="laon_money">
+										<input type="range" class="module__slider slider" value="" data-slider-min="0" data-slider-max="10000" data-slider-step="1000" data-slider-value="0" data-slider-selection="after" data-slider-tooltip="hide">
+									</div>
+								</div>
+
+								<div class="setting_wrap">
+									<label for="term_loan" class="module__label">Срок займа</label>
+									<div class="setting_item">
+										<input type="number" name="term_loan" min="1" max="14" step="1" value="2" class="quantity_select module__input module__small-input" data-measure="дней" id="laon_days">
+										<input type="range" class="module__slider slider" value="" data-slider-min="0" data-slider-max="30" data-slider-step="1" data-slider-value="1" data-slider-selection="after" data-slider-tooltip="hide">
+									</div>	
+								</div>
+
+								<div class="setting_wrap">
+									<label for="program" class="module__label">Программа</label>
+									<div class="setting_item">
+										<select name="program" id="loan_program" class="select" data-width="100%">
+											<option value="Микрозайм" id="microloan">Микрозайм</option>
+											<option value="Займ под залог" id="loan_bail">Займ под залог</option>
+											<option value="Займ под поручительство" id="loan_surety">Займ под поручительство</option>
+										</select>
+									</div>
+								</div>
+
+								<input type="submit" value="Отправить заявку" class="button button_type2 loan_button">
+								<div class="module__result">
+									Сумма к возврату 
+									<span class="module__result_whole-number">2000</span>
+									<span class="module__result_decimal-number">00</span>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="contol__form_wrapper">
+						<div class="contol__form__field">
+							<label for="id1" class="contol__form__field_label important_field">Как вас зовут</label>
+							<input type="text" id="id1" class="contol__form__field_input">
+						</div>
+						<div class="contol__form__field">
+							<label for="id2" class="contol__form__field_label important_field">Телефон</label>
+							<input type="text" id="id2" class="contol__form__field_input">
+						</div>
+						<div class="contol__form__field">
+							<label for="id2" class="contol__form__field_label">Удобное&nbsp;время<br>для звонка</label>
+							<input type="text" id="id2" class="contol__form__field_input">
+						</div>
+						<div class="contol__form__field">
+							<label for="id3" class="contol__form__field_label">Вы можете<br>предварительно<br>задать вопрос</label>
+							<textarea name="" id="" id="id3" class="contol__form__field_textarea"></textarea>
+						</div>
+					</div>
+				</form>
+
+				<div class="control_feedback_msg">
+					Спасибо за вашу заявку.<br>
+					Мы свяжемся с вами в ближайшее время
+				</div>
+			</div>
+		</div>	
+
+	</div>
+	<footer class="footer wrap">
+		&copy; 2008-2012. Все права защищены. Создание сайтов
+	</footer>
+
+	
+	
+
+
+
+</body>
+</html>

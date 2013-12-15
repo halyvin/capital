@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/slider.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css" media="all, screen, projection">
+	<link rel="stylesheet" href="css/ui.css" media="all, screen, projection">
+
+	<script type="text/javascript" src="js/libs/html5shiv.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.js"></script>
+	<script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/libs/bootstrap-slider.js"></script>
+	<script type="text/javascript" src="js/libs/bootstrap-select.min.js"></script>
+	<script type="text/javascript" src="js/libs/ui_inputs.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+
+</head>
+<body>
+
+	<div class="sitewrap">
+
+		<header class="header wrap" role="header">
+			<a href="/" class="header__site-logo-link">
+				<img src="img/site_logo.png" alt="Капитал Сибири (кредитный потребительский кооператив)" class="header__site-logo-img">
+			</a>
+
+			<div class="header__phone">
+				<div class="header__callme">Заказать обратный звонок</div>
+				<a href="tel:8800123-44-55" class="header__phone-link"><span class="header__phone-link_city-code">+7(800)</span>123-44-55</a>
+			</div>
+			
+			<div class="header__site-helpers">
+				<ul class="header__site-helpers_navigation">
+					<li class="header__site-helpers_navigation_item">
+						<a href="#" class="header__site-helpers_navigation_link">Вопрос-ответ</a>
+					</li>
+					<li class="header__site-helpers_navigation_item">
+						<a href="#" class="header__site-helpers_navigation_link">Отзывы</a>
+					</li>
+					<li class="header__site-helpers_navigation_item">
+						<a href="#" class="header__site-helpers_navigation_link">Новости и статьи</a>
+					</li>
+				</ul>
+				<div class="header__site-helpers_working-time">
+					Режим работы:<br>
+					с 9 00 до 21 00
+				</div>
+				<div class="header__site-helpers_searchbar">
+					<input type="text" class="header__site-helpers_search" placeholder="Поиск по сайту">
+					<input type="submit" value="" class="header__site-helpers_submit">
+				</div>
+			</div>
+
+			<ul role="navigation" class="header__navigation">
+				<li class="header__navigation_item">
+					<a href="/" class="header__navigation_link go_home">
+						<img src="img/home_ico.png" alt="Пора домой! :)" class="header__navigation_link-img">
+					</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link">Займы</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link">Сберегательные программы</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link">Проверка кредитной истории</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link">О кооперативе</a>
+				</li>
+				<li class="header__navigation_item">
+					<a href="#" class="header__navigation_link">Контакты</a>
+				</li>
+			</ul>
+		</header>
+
+		<div class="content" role="content">
+			<div class="wrap">
+				<div class="stack_of_modules">
+					<div class="module loan width_two-thirds">
+						<form action="" method="" class="module__form">
+							<h1 class="module__title">Займы</h1>
+
+							<div class="setting_wrap">
+								<label for="program" class="module__label">Выберите программу</label>
+								<div class="setting_item">
+									<select name="program" id="loan_program" class="select" data-width="100%">
+										<option value="Микрозайм" id="microloan">Микрозайм</option>
+										<option value="Займ под залог" id="loan_bail">Займ под залог</option>
+										<option value="Займ под поручительство" id="loan_surety">Займ под поручительство</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="setting_wrap">
+								<label for="loan_amount" class="module__label">Выберите сумму займа</label>
+								<div class="setting_item">
+									<input type="number" name="term_loan" min="1000" max="10000" value="1000" step="1000" class="quantity_select module__input module__small-input"  data-measure="руб." id="laon_money">
+									<input type="range" class="module__slider slider" value="" data-slider-min="0" data-slider-max="10000" data-slider-step="1000" data-slider-value="0" data-slider-selection="after" data-slider-tooltip="hide">
+								</div>
+							</div>
+
+							<div class="setting_wrap">
+								<label for="term_loan" class="module__label">Выберите срок займа</label>
+								<div class="setting_item">
+									<input type="number" name="term_loan" min="1" max="14" step="1" value="2" class="quantity_select module__input module__small-input" data-measure="дней" id="laon_days">
+									<input type="range" class="module__slider slider" value="" data-slider-min="0" data-slider-max="30" data-slider-step="1" data-slider-value="1" data-slider-selection="after" data-slider-tooltip="hide">
+								</div>	
+							</div>
+
+							<input type="submit" value="Получить деньги" class="button button_type1 loan_button">
+							<div class="module__result">
+								Сумма к возврату 
+								<span class="module__result_whole-number">20000</span>
+								<span class="module__result_decimal-number">00</span>
+							</div>
+						</form>	
+					</div>
+					<div class="module savings width_one-thirds">
+						<form action="" method="" class="module__form">
+							<h1 class="module__title">Сбережения</h1>
+
+							<div class="setting_wrap">
+								<input type="number" name="savings_loan" min="1000" max="10000" step="1000" value="1000" class="quantity_select module__input module__fullsize-input" data-measure="руб." id="savings_money">
+							</div>
+
+							<div class="setting_wrap">
+								<span class="slider_info_helper slider_info_helper-term">
+									Срок вклада: 
+									<span class="slider_info_helper_value">3 месяца</span>
+								</span>
+								<span class="slider_info_helper slider_info_helper-percent">
+									Годовой процент: 
+									<span class="slider_info_helper_value">16%</span>
+								</span>
+								<input type="range" class="module__slider slider" value="" data-slider-min="0" data-slider-max="30" data-values="hide" data-slider-step="1" data-slider-value="1" data-slider-selection="after" data-slider-tooltip="hide">
+							</div>	
+
+							<div class="module__result">
+								Сумма к получению 
+								<span class="module__result_whole-number">2000</span>
+								<span class="module__result_decimal-number">00</span>
+							</div>
+
+							<input type="submit" value="Стать пайщиком" class="button button_type2 savings_button">
+						</form>	
+					</div>
+				</div>	
+
+				<div class="info_slider__viewport">
+					<ul class="info_slider__list">
+						<li class="info_slider__item current" style="background: url(img/slides/s1.jpg) no-repeat;">
+							<div class="info_slider__item_text">
+								<h1>Это заголовок первого уровня</h1>
+								<h2>Это заголовок второго уровня</h2>
+								<p>Это параграф</p>
+							</div>
+							<a href="#" class="button button_type2 info_slider__button">Узнать подробности</a>
+						</li>
+
+						<li class="info_slider__item" style="background: url(img/slides/s2.jpg) no-repeat;">
+							<div class="info_slider__item_text">
+								<h1>Это заголовок первого уровня</h1>
+								<ul>
+									<li>Это элемент списка</li>
+									<li>Это тоже элемент списка</li>
+								</ul>
+							</div>
+							<a href="#" class="button button_type2 info_slider__button">Узнать подробности</a>
+						</li>
+
+						<li class="info_slider__item" style="background: url(img/slides/s3.jpg) no-repeat;">
+							<div class="info_slider__item_text">
+								<h1>Это заголовок первого уровня</h1>
+								<p>Это небольшой текст:</p>
+								<ol>
+									<li>Что же вы будете делать если текста станет чуть больше?</li>
+									<li>А?</li>
+								</ol>
+							</div>
+							<a href="#" class="button button_type2 info_slider__button">Узнать подробности</a>
+						</li>
+					</ul>
+					<ul class="info_slider__dots">
+					</ul>
+				</div>
+			
+				<div class="coop_steps">
+					<h1 class="title coop_steps__title">Как вступить в кооператив?</h1>
+					<ul class="coop_steps__list">
+						<li class="coop_steps__item">
+							<img src="img/step1.png" class="coop_steps__item_igm">
+							<div class="coop_steps__item_text">
+								Оформить&nbsp;заявку
+							</div>
+							<b class="coop_steps__helper"></b>
+						</li>
+						<li class="coop_steps__item">
+							<img src="img/step2.png" class="coop_steps__item_igm">
+							<div class="coop_steps__item_text">
+								Внести вступительный внос
+							</div>
+							<b class="coop_steps__helper"></b>
+						</li>
+						<li class="coop_steps__item">
+							<img src="img/step3.png" class="coop_steps__item_igm">
+							<div class="coop_steps__item_text">
+								Вступаете<br>в кооператив
+							</div>
+							<b class="coop_steps__helper"></b>
+						</li>
+					</ul>
+				</div>
+				
+
+				<!-- Искренне прошу заменить wtf на нечто семантичное, я не особо понял что это за блок, посему вставил данную абривеатуру :) -->
+				<div class="wtf">
+					<aside class="wtf__aside">
+						<div class="wtf__aside_links_group">
+							<h2 class="wtf__aside_links_group_title">Займы</h2>
+							<ul class="wtf__aside_links_list">
+								<li class="wtf__aside_links_item">
+									<a href="#" class="wtf__aside_link">Как получить займ?</a>
+								</li>
+								<li class="wtf__aside_links_item">
+									<a href="#" class="wtf__aside_link">Какие бывают займы?</a>
+								</li>
+								<li class="wtf__aside_links_item">
+									<a href="#" class="wtf__aside_link">Какие документы необходимы для получения займа?</a>
+								</li>
+							</ul>
+						</div>
+						<div class="wtf__aside_links_group">
+							<h2 class="wtf__aside_links_group_title">Кооператив</h2>
+							<ul class="wtf__aside_links_list">
+								<li class="wtf__aside_links_item">
+									<a href="#" class="wtf__aside_link">Как получить займ?</a>
+								</li>
+								<li class="wtf__aside_links_item">
+									<a href="#" class="wtf__aside_link">Какие бывают займы?</a>
+								</li>
+								<li class="wtf__aside_links_item">
+									<a href="#" class="wtf__aside_link">Какие документы необходимы для получения займа?</a>
+								</li>
+							</ul>
+						</div>
+					</aside>
+					
+					<div class="wtf__content">
+
+						<div class="wtf__content_comments">
+							<ul class="wtf__content_comments_list">
+								<li class="wtf__content_comment">
+									<img src="img/comment_userpic.png" alt="Иосиф К." class="wtf__comment_userpic">
+									<div class="wtf__content_comment_text">
+										<p>Пример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius.</p>
+										<p>hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolor</p>
+									</div>
+									<div class="wtf__content_comment_author">Иванов  Иван, 32 года, менеджер</div>
+								</li>
+								<li class="wtf__content_comment">
+									<img src="img/comment_userpic.png" alt="Иосиф К." class="wtf__comment_userpic">
+									<div class="wtf__content_comment_text">
+										<p>Пример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius.</p>
+										<p>hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolor</p>
+									</div>
+									<div class="wtf__content_comment_author">Иванов  Иван, 32 года, менеджер</div>
+								</li>
+							</ul>
+							<a href="#" class="wtf__all_comments">Все отзывы</a>
+						</div>
+						<div class="wtf__content_text">
+							<h2 class="title wtf__content_text_title">Заголовок текста</h2>
+							<p>Пример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolorПример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius.</p>
+							<p>Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolorПример текста Aenean placerat tortor ac dui luctus ut mattis est mollis. Donec blandit orci id velit cursus varius. Fusce quam enim, hendrerit nec ultrices a, vestibulum nec enim. Quisque imperdiet ultricies dolor <a href="#" class="wtf__content_text_more text_more">Читать дальше</a></p> 
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+				
+		</div>
+	</div>
+
+
+	
+	<footer class="footer wrap" role="footer">
+		&copy; 2008-2012. Все права защищены. Создание сайтов
+	</footer>
+
+
+
+</body>
+</html>
